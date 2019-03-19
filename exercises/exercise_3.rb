@@ -6,3 +6,12 @@ puts "Exercise 3"
 puts "----------"
 
 # Your code goes here ...
+
+#One way of doing it
+@store3 = Store.find_by id: 3
+@store3.destroy
+
+#Another Way
+# Store.destroy_by id: 3
+
+puts count = Store.count
