@@ -5,3 +5,13 @@ puts "Exercise 2"
 puts "----------"
 
 # Your code goes here ...
+
+@store1 = Store.find_by id: 1
+@store2 = Store.find_by id: 2
+
+#One way of doing it
+@store1.name = "Darren Vill"
+@store1.save
+
+#Another Way
+@store1.update annual_revenue: 290000
